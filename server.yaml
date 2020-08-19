@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  namespace: pois
+  name: api-poi-node-port-service
+spec:
+  ports:
+      # service port in cluster
+    - port: 3000
+      # port to contact inside container
+      targetPort: 3000
+  selector:
+    app: api-poi
+  type: NodePort

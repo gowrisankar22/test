@@ -27,7 +27,7 @@ app.post('v1/add', async (req, res) => {
   return res.json({ msg: "Poi qdded" });
 });
 mongoose.connect(
-  `mongodb://`mongodb://${MONGO_URL}/${MONGO_DATABASE}`,
+  `mongodb://mongodb://${MONGO_URL}/${MONGO_DATABASE}`,
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,

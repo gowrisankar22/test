@@ -38,7 +38,7 @@ mongoose.connect(
    }
   ).then(
     async () => {
-      app.listen(3000, () => { console.log('Server listening...'); }
+      app.listen(3000);
     }
   );
 const db = mongoose.connection;
